@@ -1,4 +1,10 @@
-![North Point Analytics Banner](North Point Banner.png)
+![North Point Analytics Banner](project_banner.png)
+
+# 📬 North-Point Software Mailing Analytics
+
+![R](https://img.shields.io/badge/Language-R-blue)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Domain](https://img.shields.io/badge/Domain-Marketing%20Analytics-orange)
 
 ## 📖 Executive Summary
 **Business Problem:** North-Point Software has a database of 5 million potential customers but faces high costs and low response rates (5.3%) with random mailing. The goal is to select the top 200,000 prospects most likely to purchase.
@@ -20,79 +26,42 @@ Using K-Means clustering, the customer base was segmented into three distinct ti
 2.  **Warm Prospects:** Moderate frequency. Strategy: Re-engagement offers.
 3.  **Cold Leads:** Low activity. Strategy: Awareness campaigns or exclusion to save costs.
 
+## 📂 Repository Files
+
+* `Phani_Project2_Final.R` - **Main Analysis Script**: Contains data cleaning, modeling (Regression/Classification), and evaluation code.
+* `Software_Mailing_List.csv` - **Dataset**: The historical customer data used for training the models.
+* `Phanindhar_Kasuba_Project_2_Final.docx` - **Full Report**: detailed explanation of methodology and business recommendations.
+* `A4697EF6-4961-44C1-A101-4CCFD56DA849.pdf` - **Presentation**: Executive slide deck summarizing the project.
+
 ## 🛠️ Methodology & Tech Stack
 
-**Language:** R
-
+**Language:** R  
 **Libraries Used:** `caret`, `dplyr`, `ggplot2`, `randomForest`, `rpart`, `glmnet`, `MASS`
 
 The analysis followed a standard data science pipeline:
+1.  **Data Preparation:** Cleaning source columns, feature engineering (creating `source_combined`), and categorical factor conversion.
+2.  **Exploratory Data Analysis (EDA):** Identifying outliers and analyzing distributions of spending.
+3.  **Modeling:**
+    * *Classification:* Decision Tree, Logistic Regression, Random Forest.
+    * *Regression:* Linear Regression, Stepwise Regression (AIC), Random Forest Regression.
+    * *Clustering:* K-Means (Elbow method for optimal $k$).
+4.  **Evaluation:** Confusion Matrices, ROC Curves, MSE (Mean Squared Error), and Lift Charts.
 
-1. **Data Preparation:** Cleaning source columns, feature engineering (creating `source_combined`), and categorical factor conversion.
-2. **Exploratory Data Analysis (EDA):** Identifying outliers and analyzing distributions of spending.
-3. **Modeling:**
-* *Classification:* Decision Tree, Logistic Regression, Random Forest.
-* *Regression:* Linear Regression, Stepwise Regression (AIC), Random Forest Regression.
-* *Clustering:* K-Means (Elbow method for optimal ).
+## 🚀 How to Run This Project
 
-
-4. **Evaluation:** Confusion Matrices, ROC Curves, MSE (Mean Squared Error), and Lift Charts.
-
-## 📈 Visuals
-
-*(Note: See `figures/` folder for full resolution images)*
-
-> **Variable Importance (Random Forest)**
-> *Shows that `Freq` (Frequency) and `Spending` history are the most critical features.*
-> > **Decision Tree Logic**
-> > *Visual representation of customer purchase rules.*
-> 
-> 
-> ## 🚀 How to Run This Project
-> 
-> 
-
-1. **Clone the repository**
-```bash
-git clone [https://github.com/yourusername/north-point-mailing-analytics.git](https://github.com/yourusername/north-point-mailing-analytics.git)
-
-```
-
-
-2. **Install R Dependencies**
-Open RStudio and run:
-```r
-install.packages(c("dplyr", "ggplot2", "caret", "rpart", "rpart.plot", "Metrics", "randomForest", "glmnet", "MASS"))
-
-```
-
-
-3. **Data Setup**
-* *Note: The dataset `Software_Mailing_List.csv` is not included in this repo for privacy reasons.*
-* Place your local copy of the CSV file into the `data/raw/` folder.
-
-
-4. **Run the Analysis**
-* Open `src/analysis_modeling.R`.
-* Run the script to generate models and output performance metrics.
-
-
-
-## 🔮 Future Improvements
-
-* **Dynamic Optimization:** Build an AI system that updates target lists in real-time based on live campaign feedback.
-* **Next-Best-Offer:** Extend models to recommend specific products rather than just binary purchase probability.
-* **Automated Dashboarding:** Deploy a Shiny App to monitor ROI and Lift dynamically.
+1.  **Clone the repository**
+2.  **Install R Dependencies**
+    ```r
+    install.packages(c("dplyr", "ggplot2", "caret", "rpart", "rpart.plot", "Metrics", "randomForest", "glmnet", "MASS"))
+    ```
+3.  **Run the Analysis**
+    * Open `Phani_Project2_Final.R` in RStudio.
+    * Ensure `Software_Mailing_List.csv` is in your working directory.
+    * Run the script to generate models and output performance metrics.
 
 ## 👤 Author
-
 **Phanidhar Kasuba**
-
 * Master's in Data Analytics | Webster University
-* [LinkedIn Profile](http://linkedin.com/in/phanidhar-kasuba) | [Email](mailto:pkasubavenkatana@webster.edu)
 
 ---
-
 *This project was completed as part of the CSDA 6010 Analytics Practicum.*
-
-```
