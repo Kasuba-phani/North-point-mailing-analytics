@@ -1,4 +1,4 @@
-![North Point Analytics Banner](project_banner.png)
+![North Point Analytics Banner](NP_Banner.png)
 
 # 📬 North-Point Software Mailing Analytics
 
