@@ -1,4 +1,4 @@
-![North Point Analytics Banner](figures/project_banner.png)
+![North Point Analytics Banner](North Point Banner.png)
 
 ## 📖 Executive Summary
 **Business Problem:** North-Point Software has a database of 5 million potential customers but faces high costs and low response rates (5.3%) with random mailing. The goal is to select the top 200,000 prospects most likely to purchase.
