@@ -1,10 +1,3 @@
-```markdown
-# 📬 North-Point Software Mailing Analytics
-
-![R](https://img.shields.io/badge/Language-R-blue)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![Domain](https://img.shields.io/badge/Domain-Marketing%20Analytics-orange)
-
 ## 📖 Executive Summary
 **Business Problem:** North-Point Software has a database of 5 million potential customers but faces high costs and low response rates (5.3%) with random mailing. The goal is to select the top 200,000 prospects most likely to purchase.
 
@@ -24,20 +17,6 @@ Using K-Means clustering, the customer base was segmented into three distinct ti
 1.  **VIPs (Cluster 3):** High frequency, high spend. Strategy: Loyalty rewards.
 2.  **Warm Prospects:** Moderate frequency. Strategy: Re-engagement offers.
 3.  **Cold Leads:** Low activity. Strategy: Awareness campaigns or exclusion to save costs.
-
-## 📂 Repository Structure
-
-```text
-├── data/
-│   ├── raw/                  # Raw input data (Software_Mailing_List.csv)
-│   └── processed/            # Cleaned datasets used for modeling
-├── docs/                     # Project Report (PDF/Docx) and Executive Presentations
-├── figures/                  # Plots: Decision Trees, Elbow Method, Variable Importance
-├── src/                      # R Scripts for Data Cleaning, Modeling, and Evaluation
-├── .gitignore                # Files to ignore (e.g., raw customer data)
-└── README.md                 # Project Overview
-
-```
 
 ## 🛠️ Methodology & Tech Stack
 
