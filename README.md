@@ -87,7 +87,7 @@ install.packages(c("dplyr", "ggplot2", "caret", "rpart", "rpart.plot", "Metrics"
 **Phanidhar Kasuba**
 
 * Master's in Data Analytics | Webster University
-* [LinkedIn Profile](https://linkedin.com/in/yourprofile) | [Email](mailto:pkasubavenkatana@webster.edu)
+* [LinkedIn Profile](http://linkedin.com/in/phanidhar-kasuba) | [Email](mailto:pkasubavenkatana@webster.edu)
 
 ---
 
